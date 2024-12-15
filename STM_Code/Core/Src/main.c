@@ -31,7 +31,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define COMMAND_LED_ON    0x50
+#define COMMAND_LED_OFF   0x51
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -52,7 +53,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
-void SPI_SendData(uint8_t *pUserBuff);
+void SPI_SendChar(uint8_t *pUserBuff);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -97,7 +98,7 @@ int main(void)
     /* Infinite loop */
 
     /* USER CODE BEGIN WHILE */
-    SPI_SendData(user_buffer);
+    SPI_SendChar(user_buffer);
     /* USER CODE END WHILE */
   }
 
@@ -331,17 +332,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void SPI_SendData(uint8_t *pUserBuff)
+void SPI_SendChar(uint8_t *pUserBuff)
 {
     if (button_flag == ENABLE)
     {
-      HAL_Delay(100);
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
-      HAL_SPI_Transmit(&hspi1, pUserBuff, strlen((char*)pUserBuff), HAL_MAX_DELAY);
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+      HAL_Delay(100);   
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);                           // NSS Pin Pulled low
+      HAL_SPI_Transmit(&hspi1, pUserBuff, strlen((char*)pUserBuff), HAL_MAX_DELAY);   // Data Transmission
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);                             // NSS Pin Pulled high
     }
     button_flag = DISABLE;
 }
+
 
 /* USER CODE END 4 */
 

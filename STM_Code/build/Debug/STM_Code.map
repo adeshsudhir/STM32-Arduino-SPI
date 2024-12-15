@@ -2483,9 +2483,9 @@ LOAD C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
                 0x08000614       0x6c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
  .text.MX_GPIO_Init
                 0x08000680      0x2b0 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .text.SPI_SendData
+ .text.SPI_SendChar
                 0x08000930       0x5c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
-                0x08000930                SPI_SendData
+                0x08000930                SPI_SendChar
  .text.Error_Handler
                 0x0800098c        0xc CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
                 0x0800098c                Error_Handler
@@ -2977,68 +2977,68 @@ LOAD C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_rnglists
                 0x00000459       0x19 CMakeFiles/STM_Code.dir/startup_stm32f407xx.s.obj
 
-.debug_macro    0x00000000    0x1fc26
- .debug_macro   0x00000000      0x288 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x00000288      0xab4 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x00000d3c      0x295 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x00000fd1       0x2e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x00000fff       0x2f CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0000102e       0x22 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x00001050       0x8e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x000010de       0x51 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0000112f      0x103 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x00001232       0x6a CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0000129c      0x1df CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0000147b       0x1c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x00001497       0x22 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x000014b9       0xfb CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x000015b4     0x1011 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x000025c5      0x11f CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x000026e4    0x15e97 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001857b       0x6d CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x000185e8     0x369a CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001bc82      0x189 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001be0b       0x5c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001be67      0x980 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001c7e7      0x9e9 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001d1d0      0x115 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001d2e5      0x13e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001d423       0xa5 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001d4c8      0x174 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001d63c      0x287 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001d8c3       0x5f CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001d922      0x236 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001db58      0x12c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001dc84      0x21e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001dea2       0x2e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001ded0      0x127 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001dff7       0x7e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e075       0x89 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e0fe      0x225 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e323      0x12d CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e450      0x196 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e5e6       0x74 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e65a       0x2a CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e684       0x3c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e6c0       0x34 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e6f4       0x16 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e70a       0x43 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e74d       0x34 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e781       0x10 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e791       0x58 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e7e9      0x1de CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001e9c7      0x369 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001ed30       0x10 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001ed40       0x35 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001ed75       0x20 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
- .debug_macro   0x0001ed95      0x1d3 CMakeFiles/STM_Code.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_macro   0x0001ef68      0x1c9 CMakeFiles/STM_Code.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_macro   0x0001f131      0x1c9 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
- .debug_macro   0x0001f2fa      0x1de CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_macro   0x0001f4d8      0x1c0 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_macro   0x0001f698      0x1ba CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_macro   0x0001f852      0x21a CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_macro   0x0001fa6c      0x1ba CMakeFiles/STM_Code.dir/Core/Src/system_stm32f4xx.c.obj
+.debug_macro    0x00000000    0x1fc32
+ .debug_macro   0x00000000      0x294 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x00000294      0xab4 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x00000d48      0x295 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x00000fdd       0x2e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0000100b       0x2f CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0000103a       0x22 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0000105c       0x8e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x000010ea       0x51 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0000113b      0x103 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0000123e       0x6a CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x000012a8      0x1df CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x00001487       0x1c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x000014a3       0x22 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x000014c5       0xfb CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x000015c0     0x1011 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x000025d1      0x11f CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x000026f0    0x15e97 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x00018587       0x6d CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x000185f4     0x369a CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001bc8e      0x189 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001be17       0x5c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001be73      0x980 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001c7f3      0x9e9 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001d1dc      0x115 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001d2f1      0x13e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001d42f       0xa5 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001d4d4      0x174 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001d648      0x287 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001d8cf       0x5f CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001d92e      0x236 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001db64      0x12c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001dc90      0x21e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001deae       0x2e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001dedc      0x127 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e003       0x7e CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e081       0x89 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e10a      0x225 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e32f      0x12d CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e45c      0x196 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e5f2       0x74 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e666       0x2a CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e690       0x3c CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e6cc       0x34 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e700       0x16 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e716       0x43 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e759       0x34 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e78d       0x10 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e79d       0x58 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e7f5      0x1de CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001e9d3      0x369 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001ed3c       0x10 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001ed4c       0x35 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001ed81       0x20 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001eda1      0x1d3 CMakeFiles/STM_Code.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_macro   0x0001ef74      0x1c9 CMakeFiles/STM_Code.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_macro   0x0001f13d      0x1c9 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_macro   0x0001f306      0x1de CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_macro   0x0001f4e4      0x1c0 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_macro   0x0001f6a4      0x1ba CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_macro   0x0001f85e      0x21a CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_macro   0x0001fa78      0x1ba CMakeFiles/STM_Code.dir/Core/Src/system_stm32f4xx.c.obj
 
 .debug_line     0x00000000     0x7353
  .debug_line    0x00000000      0x9fc CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
@@ -3053,28 +3053,28 @@ LOAD C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/
  .debug_line    0x0000728a       0x7a CMakeFiles/STM_Code.dir/startup_stm32f407xx.s.obj
  .debug_line    0x00007304       0x4f C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strlen.o)
 
-.debug_str      0x00000000    0xc184a
- .debug_str     0x00000000    0xc003f CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
-                              0xc035f (size before relaxing)
- .debug_str     0x000c003f      0x13a CMakeFiles/STM_Code.dir/Core/Src/stm32f4xx_it.c.obj
+.debug_str      0x00000000    0xc1873
+ .debug_str     0x00000000    0xc0068 CMakeFiles/STM_Code.dir/Core/Src/main.c.obj
+                              0xc0388 (size before relaxing)
+ .debug_str     0x000c0068      0x13a CMakeFiles/STM_Code.dir/Core/Src/stm32f4xx_it.c.obj
                               0xbcb8d (size before relaxing)
- .debug_str     0x000c0179       0xc7 CMakeFiles/STM_Code.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x000c01a2       0xc7 CMakeFiles/STM_Code.dir/Core/Src/stm32f4xx_hal_msp.c.obj
                               0xbd0c3 (size before relaxing)
- .debug_str     0x000c0240      0x5f9 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_str     0x000c0269      0x5f9 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
                               0xbce88 (size before relaxing)
- .debug_str     0x000c0839      0x2d7 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x000c0862      0x2d7 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
                               0xbc9fe (size before relaxing)
- .debug_str     0x000c0b10      0x14f CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x000c0b39      0x14f CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
                               0xbc745 (size before relaxing)
- .debug_str     0x000c0c5f      0x445 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x000c0c88      0x445 CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
                               0xbceca (size before relaxing)
- .debug_str     0x000c10a4      0x5bb CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x000c10cd      0x5bb CMakeFiles/STM_Code.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                               0xbd14e (size before relaxing)
- .debug_str     0x000c165f       0x91 CMakeFiles/STM_Code.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_str     0x000c1688       0x91 CMakeFiles/STM_Code.dir/Core/Src/system_stm32f4xx.c.obj
                               0xbc5ca (size before relaxing)
- .debug_str     0x000c16f0       0x7c CMakeFiles/STM_Code.dir/startup_stm32f407xx.s.obj
+ .debug_str     0x000c1719       0x7c CMakeFiles/STM_Code.dir/startup_stm32f407xx.s.obj
                                  0xd2 (size before relaxing)
- .debug_str     0x000c176c       0xde C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strlen.o)
+ .debug_str     0x000c1795       0xde C:/ST/STM32CubeCLT_1.17.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strlen.o)
                                  0xf3 (size before relaxing)
 
 .debug_line_str
