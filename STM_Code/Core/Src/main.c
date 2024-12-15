@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#define ENABLE  0x1
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
