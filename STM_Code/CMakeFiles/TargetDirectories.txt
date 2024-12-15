@@ -1,0 +1,5 @@
+C:/Users/Adesh/Desktop/Embedded/VScode Workspace/STM_ARDUINO_SPI/STM_Code/CMakeFiles/STM_Code.dir
+C:/Users/Adesh/Desktop/Embedded/VScode Workspace/STM_ARDUINO_SPI/STM_Code/CMakeFiles/edit_cache.dir
+C:/Users/Adesh/Desktop/Embedded/VScode Workspace/STM_ARDUINO_SPI/STM_Code/CMakeFiles/rebuild_cache.dir
+C:/Users/Adesh/Desktop/Embedded/VScode Workspace/STM_ARDUINO_SPI/STM_Code/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Users/Adesh/Desktop/Embedded/VScode Workspace/STM_ARDUINO_SPI/STM_Code/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
