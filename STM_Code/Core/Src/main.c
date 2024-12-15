@@ -46,6 +46,7 @@ SPI_HandleTypeDef hspi1;
 /* USER CODE BEGIN PV */
 uint8_t button_flag = 0;
 uint8_t user_buffer[50] = "hello from stm\n";
+uint8_t command_code;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -98,7 +99,7 @@ int main(void)
     /* Infinite loop */
 
     /* USER CODE BEGIN WHILE */
-    SPI_SendChar(user_buffer);
+
     /* USER CODE END WHILE */
   }
 
@@ -344,6 +345,17 @@ void SPI_SendChar(uint8_t *pUserBuff)
     button_flag = DISABLE;
 }
 
+void SPI_Send_Command(uint8_t *command_code)
+{
+    if (button_flag == ENABLE)
+    {
+      HAL_Delay(100);   
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);                           // NSS Pin Pulled low
+      HAL_SPI_Transmit(&hspi1, (uint8_t*)&command_code, 1, HAL_MAX_DELAY);   // Data Transmission
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);                             // NSS Pin Pulled high
+    }
+    button_flag = DISABLE;
+}
 
 /* USER CODE END 4 */
 
