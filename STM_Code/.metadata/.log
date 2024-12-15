@@ -1,0 +1,83 @@
+!SESSION 2024-12-15 18:18:59.433 -----------------------------------------------
+eclipse.buildId=Version 1.14.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-12-15 18:19:42.124
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-12-15 18:19:42.137
+!MESSAGE Log4j2 initialized with config file C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-12-15 18:19:52.680
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-12-15 18:20:05.921
+!MESSAGE Could not import project located at C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:564)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:603)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:551)
+	... 2 more
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-15 18:20:48.653
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2024-12-15 18:20:48.653
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2024-12-15 18:20:48.653
+!MESSAGE C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code overlaps the workspace location: C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-12-15 18:21:44.603
+!MESSAGE Could not import project located at C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:564)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:603)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:551)
+	... 2 more
+
+!ENTRY org.eclipse.ui.ide 4 0 2024-12-15 18:22:23.667
+!MESSAGE Could not import project located at C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:564)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:211)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:95)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:305)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:291)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:603)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:551)
+	... 2 more
+
+!ENTRY org.eclipse.core.resources 4 77 2024-12-15 18:23:55.954
+!MESSAGE 'C:\Users\Adesh\Desktop\Embedded\VScode Workspace\STM_ARDUINO_SPI\STM_Code' is not a valid location for linked resources.
+
+!ENTRY com.st.stm32cube.ide.cmake 4 0 2024-12-15 18:23:56.051
+!MESSAGE Failed to setup project
+!STACK 0
+java.lang.Exception: Project setup failed. Failed linking source directory
+	at com.st.stm32cube.ide.cmake.utils.CMakeUtils$CmakeProjectSetupTask.run(CMakeUtils.java:108)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-12-15 18:23:56.058
+!MESSAGE Indexed 'stm' (0 sources, 0 headers) in 0.002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

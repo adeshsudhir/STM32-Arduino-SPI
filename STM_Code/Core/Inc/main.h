@@ -74,6 +74,8 @@ void Error_Handler(void);
 #define B1_Pin GPIO_PIN_0
 #define B1_GPIO_Port GPIOA
 #define B1_EXTI_IRQn EXTI0_IRQn
+#define SPI1_SOFTWARE_NSS_Pin GPIO_PIN_4
+#define SPI1_SOFTWARE_NSS_GPIO_Port GPIOA
 #define SPI1_SCK_Pin GPIO_PIN_5
 #define SPI1_SCK_GPIO_Port GPIOA
 #define SPI1_MISO_Pin GPIO_PIN_6
