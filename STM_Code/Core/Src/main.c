@@ -42,6 +42,7 @@
 /* Private variables ---------------------------------------------------------*/
 SPI_HandleTypeDef hspi1;
 
+uint8_t button_flag = 0;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
