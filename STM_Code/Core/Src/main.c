@@ -45,7 +45,8 @@ SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN PV */
 uint8_t button_flag = 0;
-uint8_t user_buffer[50] = "hello from stm\n";
+uint8_t user_buffer[] = "hello from stm\n";
+uint8_t current_task = 0;
 uint8_t command_code;
 /* USER CODE END PV */
 
@@ -55,6 +56,7 @@ static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
 void SPI_SendChar(uint8_t *pUserBuff);
+void SPI_Send_Command(uint8_t *command_code);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -92,14 +94,31 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-
+  uint8_t dummy_byte = 0x00;
+  HAL_SPI_Transmit(&hspi1, &dummy_byte, 1, HAL_MAX_DELAY);
   /* USER CODE END 2 */
+
+  /* Infinite loop */
   while(1)
   {
-    /* Infinite loop */
-
-    /* USER CODE BEGIN WHILE */
-
+  /* USER CODE BEGIN WHILE */
+    if (button_flag == ENABLE)
+    {
+      if (current_task == 0)
+      {
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+        HAL_SPI_Transmit(&hspi1, user_buffer, strlen((char*)user_buffer)-1, HAL_MAX_DELAY);
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+        current_task += 1;
+      }else if (current_task == 1)
+      {
+        command_code = COMMAND_LED_ON;
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+        HAL_SPI_Transmit(&hspi1, &command_code, 1, HAL_MAX_DELAY);
+        HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+      }
+      button_flag = DISABLE;
+    }
     /* USER CODE END WHILE */
   }
 
@@ -218,7 +237,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(OTG_FS_PowerSwitchOn_GPIO_Port, OTG_FS_PowerSwitchOn_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(SPI1_SOFTWARE_NSS_GPIO_Port, SPI1_SOFTWARE_NSS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(SPI1_SOFTWARE_NSS_GPIO_Port, SPI1_SOFTWARE_NSS_Pin, GPIO_PIN_SET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOD, LD4_Pin|LD3_Pin|LD5_Pin|LD6_Pin
@@ -255,7 +274,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin : SPI1_SOFTWARE_NSS_Pin */
   GPIO_InitStruct.Pin = SPI1_SOFTWARE_NSS_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(SPI1_SOFTWARE_NSS_GPIO_Port, &GPIO_InitStruct);
 
@@ -333,29 +352,15 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void SPI_SendChar(uint8_t *pUserBuff)
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-    if (button_flag == ENABLE)
-    {
-      HAL_Delay(100);   
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);                           // NSS Pin Pulled low
-      HAL_SPI_Transmit(&hspi1, pUserBuff, strlen((char*)pUserBuff), HAL_MAX_DELAY);   // Data Transmission
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);                             // NSS Pin Pulled high
-    }
-    button_flag = DISABLE;
+  if (GPIO_Pin == GPIO_PIN_0)
+  {
+    button_flag = 1;
+  }
 }
 
-void SPI_Send_Command(uint8_t *command_code)
-{
-    if (button_flag == ENABLE)
-    {
-      HAL_Delay(100);   
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);                           // NSS Pin Pulled low
-      HAL_SPI_Transmit(&hspi1, (uint8_t*)&command_code, 1, HAL_MAX_DELAY);   // Data Transmission
-      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);                             // NSS Pin Pulled high
-    }
-    button_flag = DISABLE;
-}
 
 /* USER CODE END 4 */
 
